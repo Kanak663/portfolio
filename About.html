@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>purab's portfolio</title>
+     <link rel="icon" type="image" href="P1.jpg">
+</head>
+<body>
+     <style>
+         .header{
+            width: 81%;
+            padding: 20px 10%;
+            margin-left: 50px;
+            background: transparent;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;  
+        }
+        nav{
+             margin-left: 50px;
+             margin-top: 50px;
+             padding: 20px 30%;
+             position: fixed;
+            justify-content: space-between;
+            align-items: center;
+            display: flex;
+        }
+       
+        .logo{
+            margin-top: 50px;
+            font-size: 50px;
+            text-decoration: none;
+            font-weight: 500px;
+            font-style: italic;
+            position: fixed;
+            background: linear-gradient(to top left,red,blue); 
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            cursor: default;
+            opacity: 0;
+            animation: slideRight 6s ease forwards;
+        }
+        @keyframes slideRight{
+            0%{
+                transform: translateX(-200px);
+                opacity: 5;
+            }
+             100%{
+                transform: translateX(0);
+                opacity: 5;
+            }
+        }
+        .navbar a {
+            padding: 8px 15px;
+            font-size: 20px;
+            color: aliceblue;
+            background: transparent;
+            text-decoration: none;
+            font-weight: 100px;
+            margin-left: 35px;
+            border-radius: 20px;
+            border: 2px solid aqua;
+            box-shadow: 2px 2px 15px aqua;
+            opacity: 0;
+            animation: slideTop 6s ease forwards;
+             transition: 0.5s ease;
+        }
+          @keyframes slideTop{
+            0%{
+                transform: translatey(-50px);
+                opacity: 5;
+            }
+             100%{
+                transform: translatey(0);
+                opacity: 5;
+            }
+          }
+        .navbar a:hover{
+            color: aqua;
+            box-shadow: 0 0 20px aqua;
+        }
+        .container{
+            width: 600px;
+            height: 450px;
+            margin-top: 10px;
+            margin-left: 120px;
+            display: inline-block;
+            text-align: center;
+            border-radius: 20px;
+             border: 2px solid aqua;
+             box-shadow: 2px 2px 20px aqua;
+             background: transparent;
+        }
+        
+        .about{
+           font-size: 50px;
+           text-align: center;
+            font-weight: 500px;
+             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            background: linear-gradient(to top left,red,blue);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-style: italic;
+           margin-top: 80px;
+           margin-left: 700px;
+           animation: animate 2s ease-in-out forwards infinite;
+        }
+                  @keyframes animate {
+        0% {
+            transform: translateY(0px);
+         }
+  
+         50% {
+           transform: translateY(-30px);
+        }
+         100% {
+          transform: translateY(0px);
+            }
+        }
+        .self{
+            font-size: 50px;
+            font-weight: 800;
+            font-style: italic;
+           color: aqua;
+            text-decoration: underline;
+            text-shadow: 2px 2px 5px white;
+           
+            
+        }
+        .purab{
+             font-size: 50px;
+            font-weight: 500px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            background: linear-gradient(to top left,red,blue);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-style: italic;
+            position: relative;
+        }
+        .purab::after{
+          content: "";
+            left: 0;
+            right: 0;
+            height: 100%;
+            position: absolute;
+            border-left: 2px solid white;
+           animation: text 5s linear infinite ;
+        }
+        @keyframes text{
+            0%{
+                left: 0;
+            }
+            50%{
+                left: 100%;
+            }
+            100%{
+                left: 0;
+            }
+        }
+        .span{
+              background: whitesmoke;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 300;
+            text-shadow: 2px 2px 5px aqua;
+             background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .p{
+            font-size: 30px;
+            text-align: left;
+            padding-left: 50px;
+        }
+        p{
+            color: white;
+            font-size: 20px;
+            font-weight: 200;
+            font-style: italic;
+            letter-spacing: 1px;
+        }
+        .skill{
+            font-size:30px;
+            font-weight: 500;
+            color: white;
+            text-align: left;
+            padding-left: 100px;
+            padding-bottom: 10px;
+        }
+         .footer{
+            height: 40px;
+            max-width: 100%;
+            margin-top: 90px;
+            font-size: 20px;
+            font-style: italic;
+            text-decoration-color: aqua;
+            color: aqua;
+            letter-spacing: 1px;
+            background: rgb(51, 52, 52);
+            text-align: center;
+            padding-left: 160px;
+            padding-bottom: 15px;
+            align-content: center;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        body{
+            background: black;
+        }
+     </style>
+      <header class="header">
+        <a href="#" class="logo">Portfolio.</a>
+        <nav class="navbar">
+            <a href="portfolio.html">Home</a>
+            <a href="About.html">about</a>
+            <a href="Task.html">Task</a>
+            <a href="project.html">Project</a>
+            <a href="contact.html">contact</a>
+        </nav>
+    </header>
+
+          <h1 class="about">About Me</h1>
+       <div class="container"> 
+          <h1 class="self">my self</h1>
+          <p class="p">Hello, I am </p>
+          <h1 ><span class="purab">Purab Jagtap</span></h1>
+          <p>a <span class="span">web Developer</span> passionate about web Designing.
+             Currently learning  Web Development,
+             I focus on creating interactive websites with 
+             a blend of creativity and functionality.
+             Presantly I am pursuing B.tech from shri dadaji
+             institute technology and science.
+          </p>
+      </div>
+
+      <div class="container">
+         <h1 class="self">skills</h1>
+         <h1 class="skill">HTML</h1>
+         <h1 class="skill">CSS</h1>
+         <h1 class="skill">JAVASCRIPT</h1>
+         <h1 class="skill">C language</h1>
+         <h1 class="skill">C + +</h1>
+        </div>
+
+             <footer class="footer">
+                <p>&copy; 2026 . Created by Purab  .</p>
+             </footer>
+  
+</body>
+</html>

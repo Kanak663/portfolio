@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>purab's portfolio</title>
+     <link rel="icon" type="image" href="P1.jpg">
+    <style>
+         .header{
+            width: 81%;
+            padding: 20px 10%;
+            margin-left: 50px;
+            background: transparent;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;  
+        }
+        nav{
+             margin-left: 50px;
+             margin-top: 50px;
+             padding: 20px 30%;
+             position: fixed;
+            justify-content: space-between;
+            align-items: center;
+            display: flex;
+        }
+       
+        .logo{
+            margin-top: 50px;
+            font-size: 50px;
+            text-decoration: none;
+            font-weight: 500px;
+            font-style: italic;
+            position: fixed;
+            background: linear-gradient(to top left,red,blue); 
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            cursor: default;
+            opacity: 0;
+            animation: slideRight 6s ease forwards;
+        }
+        @keyframes slideRight{
+            0%{
+                transform: translateX(-200px);
+                opacity: 5;
+            }
+             100%{
+                transform: translateX(0);
+                opacity: 5;
+            }
+        }
+        .navbar a {
+            padding: 8px 15px;
+            font-size: 20px;
+            color: aliceblue;
+            background: transparent;
+            text-decoration: none;
+            font-weight: 100px;
+            margin-left: 35px;
+            border-radius: 20px;
+            border: 2px solid aqua;
+            box-shadow: 2px 2px 15px aqua;
+            opacity: 0;
+            animation: slideTop 6s ease forwards;
+             transition: 0.5s ease;
+        }
+          @keyframes slideTop{
+            0%{
+                transform: translatey(-50px);
+                opacity: 5;
+            }
+             100%{
+                transform: translatey(0);
+                opacity: 5;
+            }
+          }
+        .navbar a:hover{
+            color: aqua;
+            box-shadow: 0 0 20px aqua;
+        }
+        body{
+            background: black;
+        }
+        .container{
+            width: 300px;
+            height: 300px;
+            margin-top: 30px;
+            margin-left: 280px;
+            margin-bottom: 80px;
+            display: inline-block;
+            background: transparent;
+            text-align: center;
+            color: aliceblue;
+            justify-content: space-evenly;
+            border-radius: 20px;
+            border: 2px solid aqua;
+            box-shadow: 2px 2px 20px aqua;
+            background-image: url(back3\ img.avif);
+            transition: 0.5s ease;
+           }
+             .container:hover{
+            color: aqua;
+            background: transparent;
+            transform: scale(1.1);
+            box-shadow: 0 0 30px aqua;
+           }
+           .box{
+            color: aqua;
+            background: transparent;
+            letter-spacing: 1px;
+            font-style: italic;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+           }
+           .box:hover{
+            background: transparent;
+            color: aqua;
+           }
+           .view{
+            width: 300px;
+            height: 100px;
+            margin-top: 0px;
+            background:linear-gradient(to top,black,aqua,black);
+            color: black;
+            border-radius: 20px;
+            padding-top: 60px;
+           position: absolute;
+           opacity: 0;
+           transition: 5s;
+           transform:translateY(20px);
+           }
+           .view:hover{
+             opacity: 1;
+           }
+           .view a {
+            padding: 8px 13px;
+            border-radius: 20px;
+            font-size: 30px;
+            font-weight: 800;
+            font-style: normal;
+            text-decoration: none;
+            text-align: center;
+            background-color: aqua;
+             background: linear-gradient(to top left,red,blue); 
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            color: aqua;
+            border: 2px solid white;
+            box-shadow: 2px 2px 20px white;
+           }
+           .view a:hover{
+             background-color: black;
+           }
+           .task{
+             font-size: 50px;
+            font-weight: 500px;
+             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            background: linear-gradient(to top left,red,blue);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-style: italic;
+            margin-top: 80px;
+            margin-left: 700px;
+            animation: animate 2s ease-in-out forwards infinite;
+            }
+                @keyframes animate {
+                   0% {
+                          transform: translateY(0px);
+                      }
+  
+                   50% {
+                         transform: translateY(-30px);
+                       }
+                   100% {
+                          transform: translateY(0px);
+                        }
+              }
+               .footer{
+            height: 40px;
+            margin-top: 50px;
+            font-size: 20px;
+            font-style: italic;
+             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: aqua;
+            letter-spacing: 1px;
+            background: rgb(51, 52, 52);
+            text-align: center;
+            padding-left: 160px;
+            padding-bottom: 15px;
+            align-content: center;
+        }
+    </style>
+</head>
+<body>
+     <header class="header">
+        <a href="#" class="logo">Portfolio.</a>
+        <nav class="navbar">
+            <a href="portfolio.html">Home</a>
+            <a href="About.html">about</a>
+            <a href="Task.html">Task</a>
+            <a href="project.html">Project</a>
+            <a href="contact.html">contact</a>
+        </nav>
+    </header>
+
+    <h1 class="task">My Project</h1>
+    <div class="container">
+            <h1 class="box">Login <br> Page</h1>
+              <div class="view">
+                   <a href="login page.html">View</a>
+              </div>
+    </div>
+
+    <div class="container">
+         <h1 class="box">Registration <br>Page</h1>
+         <div class="view">
+           <a href="Registration page.html">View</a>
+         </div>
+    </div>
+
+    <div class="container">
+           <h1 class="box">Project-1</h1>
+             <div class="view">
+                <a href="calculator.html">View</a>
+             </div>
+    </div>
+
+    <div class="container">
+         <h1 class="box">Project-2</h1>
+           <div class="view">
+                <a href="index.html">View</a>
+             </div>  
+    </div>
+
+              <footer class="footer">
+                <p>&copy; 2026 . Created by Purab  .</p>
+              </footer>
+</body>
+</html>

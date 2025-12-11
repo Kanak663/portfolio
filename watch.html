@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>purab's portfolio</title>
+	
+	<style type="text/css">
+
+	marquee{
+		color: greenyellow;
+		font-size: 30px;
+		font-weight: bold;
+		font-style: italic;
+		margin-top: 40px;
+	}
+
+	h2 {
+		color: deepskyblue;
+		text-align: center;
+		font-size: 40px;
+		font-weight: bold;
+		font-style: italic;
+		margin-top: 90px;
+	}
+
+	.container {
+		width: 300px;
+		height: 320px;
+		display: inline-block;
+		border:1px solid aqua;
+		text-align: center;
+		border-radius: 15px;
+		 box-shadow: 2px 2px 20px aqua;
+	    background: linear-gradient(to top left,blue,orange,red);
+		margin-top: 60px;
+	}
+
+	#main{
+		display: flex;
+		justify-content: space-evenly;
+	}
+	.container img {
+		width: 300px;
+		height: 250px;
+		border:1px solid aqua;
+		border-radius: 15px ;
+	}
+	
+	del{
+		color: black;
+	}
+	.price{
+		margin-top: 10px;
+		font-size: 20px;
+		color: blue;
+		font-weight: bold;
+	}
+	body{
+		width: 100%;
+		height: 720px;
+		background: linear-gradient(to top left,blue,orange,red);
+	}
+	</style>
+</head>
+<body>
+	<marquee behavior="alternate">
+		Half the Price, Twice the Style - 50% OFF Watches!
+	</marquee>
+
+	<h2>Your Time, Your Style</h2>
+<div id="main">
+	<div class="container">
+		<img src="watch1.webp">
+		<div class="price"><del>1000.00</del><br>&#8377;500</div>
+	</div>
+
+	<div class="container">
+		<img src="watch2.webp">
+		<div class="price"><del>800.00</del><br>&#8377;400</div>
+	</div>
+
+	<div class="container">
+		<img src="watch3.jpeg">
+        <div class="price"><del>1300.00</del><br>&#8377;650</div>
+	</div>
+</div>
+</body>
+</html>

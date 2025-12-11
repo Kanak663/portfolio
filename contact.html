@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>purab's portfolio</title>
+     <link rel="icon" type="image" href="P2.jpg">
+    <style>
+         .header{
+            width: 81%;
+            padding: 20px 10%;
+            margin-left: 50px;
+            background: transparent;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;  
+        }
+        nav{
+             margin-left: 50px;
+             margin-top: 50px;
+             padding: 20px 30%;
+             position: fixed;
+            justify-content: space-between;
+            align-items: center;
+            display: flex;
+        }
+       
+        .logo{
+            margin-top: 50px;
+            font-size: 50px;
+            text-decoration: none;
+            font-weight: 500px;
+            font-style: italic;
+            position: fixed;
+            background: linear-gradient(to top left,red,blue); 
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            cursor: default;
+            opacity: 0;
+            animation: slideRight 6s ease forwards;
+        }
+        @keyframes slideRight{
+            0%{
+                transform: translateX(-200px);
+                opacity: 5;
+            }
+             100%{
+                transform: translateX(0);
+                opacity: 5;
+            }
+        }
+        .navbar a {
+            padding: 8px 15px;
+            font-size: 20px;
+            color: aliceblue;
+            background: transparent;
+            text-decoration: none;
+            font-weight: 100px;
+            margin-left: 35px;
+            border-radius: 20px;
+            border: 2px solid aqua;
+            box-shadow: 2px 2px 15px aqua;
+            opacity: 0;
+            animation: slideTop 6s ease forwards;
+             transition: 0.5s ease;
+        }
+          @keyframes slideTop{
+            0%{
+                transform: translatey(-50px);
+                opacity: 5;
+            }
+             100%{
+                transform: translatey(0);
+                opacity: 5;
+            }
+          }
+        .navbar a:hover{
+            color: aqua;
+            box-shadow: 0 0 20px aqua;
+        }
+        .contact{
+           font-size: 50px;
+            font-weight: 500px;
+            background: linear-gradient(to top left,red,blue);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-style: italic;
+           margin-top: 80px;
+           margin-left: 700px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+           animation: animate 2s ease-in-out forwards infinite;
+        }
+                  @keyframes animate {
+        0% {
+            transform: translateY(0px);
+         }
+  
+         50% {
+           transform: translateY(-30px);
+        }
+         100% {
+          transform: translateY(0px);
+            }
+        }
+         .container{
+            width: 300px;
+            height: 430px;
+            position: relative;
+            margin-top: 10px;
+            margin-left:620px;
+            padding-top: 40px;
+            padding-left: 50px;
+            padding-right: 50px;
+            background: transparent;
+            text-align: center;
+            border-radius: 20px;
+             border: 2px solid aqua;
+             box-shadow: 2px 2px 20px aqua;
+        }
+        label{
+         width: 10%;
+         height: 100px;
+         font-size: 20px;
+         font-weight: 500;
+         color: aqua;
+         text-align: left;
+         padding-left: 10px;
+         margin-left: 20px;
+        }
+        form{
+            width: 500px;
+            height: 300px;
+            margin-left: 10px;
+            text-align: left;
+        }
+        
+           .input{
+            width: 250px;
+            height: 40px;
+            border-radius: 10px;
+            border: 2px solid aqua;
+            margin-left: 10px;
+            margin-bottom: 30px;
+            text-align: center;
+             color: aliceblue;
+            font-size: 20px;
+            background: rgb(51, 52, 52);
+        }
+        .send{
+            padding:8px 40px ;
+            margin-left: 70px;
+            background:transparent;
+            border-radius: 40px;
+            border: 2px solid aqua;
+            box-shadow: 2px 2px 20px aqua;
+            font-size: 20px;
+            font-weight: 800;
+            font-style: italic;
+            color: aqua;
+            letter-spacing: 1px;
+            text-decoration: none;
+        }
+        .textarea{
+            width: 250px;
+            height: 100px;
+            margin-bottom: 30px;
+            margin-left: 10px;
+            text-align: left;
+            border-radius: 10px;
+            text-align: center;
+            color: aliceblue;
+            font-size: 20px;
+            border: 2px solid aqua;
+            background: rgb(51, 52, 52);
+        }
+          .footer{
+            height: 40px;
+            margin-top: 90px;
+            font-size: 20px;
+            font-style: italic;
+             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: aqua;
+            letter-spacing: 1px;
+            background: rgb(51, 52, 52);
+            text-align: center;
+            padding-left: 160px;
+            padding-bottom: 15px;
+            align-content: center;
+        }
+        body{
+            background: black;
+        }
+    </style>
+</head>
+<body>
+     <header class="header">
+        <a href="#" class="logo">Portfolio.</a>
+        <nav class="navbar"> 
+            <a href="portfolio.html">Home</a>
+            <a href="About.html">about</a>
+            <a href="Task.html">Task</a>
+            <a href="project.html">Project</a>
+            <a href="contact.html">contact</a>
+        </nav>
+
+    </header>
+      
+         <h1 class="contact">Contact Me</h1>
+         <div class="container">
+            <form>
+                
+                           <label>Name</label><br>
+                          <input class="input" type="text" placeholder="Enter your name" name="fullname" pattern="[A-Za-z\s]{3,}" title="contian Only Alphabets"><br>
+
+       	 		          <label>Email</label><br>
+       	 		          <input class="input" type="email" name="email" placeholder="Enter your email"><br>
+
+                   
+       	 		       <label>Message</label><br>
+       	 		       <textarea class="textarea" cols="30" rows="5" class="input" placeholder="Enter your Message"></textarea><br>
+
+                       <button class="send">Send</button>
+       	 	             
+            </form>
+         </div>
+
+          <footer class="footer">
+             <p>&copy; 2026 . Created by Purab  .</p>
+         </footer>
+</body>
+</html>

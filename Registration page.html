@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Registration form</title>
+  <style type="text/css">
+
+     h1{
+      font-size: 50px;
+      font-weight: bold;
+      font-style: italic;
+      text-align: center;
+      margin-top: 70px;
+      color: purple;
+      text-decoration: underline;
+      text-shadow: 5px 5px 5px white;
+      }
+      form{
+        width: 80%;
+        height: 700px;
+        color: purple;
+        font-size: 25px;
+        margin: 5%;
+        
+      }
+      .input{
+        width: 100%;
+        height: 30px;
+        outline: none;
+        border: none;
+        font-size: 20px;
+        background-color: transparent;
+        border-bottom: 2px solid deepskyblue;
+      }
+      table{
+        width: 80%;
+        height: 700px;
+        margin: 5%;
+        
+      }
+      .text{
+        width: 40%;
+        margin: 30px;
+       text-align: center;
+      }
+      .Gender{
+        font-size: 20px;
+        color: green;
+      }
+      .reset{
+        background-color: dodgerblue;
+        color: white;
+        width: 150px;
+        height: 30px;
+        border-radius: 20px;
+      }
+      button{
+        background-color: dodgerblue;
+        color: white;
+        width: 150px;
+        height: 30px;
+        border-radius: 20px;
+      }
+    .container {
+            background-image: url("images.jpeg");
+            background-repeat: no-repeat;
+           background-size: 100% 100%;
+            background: ;
+            width: 50%;
+            height: 700px;
+            margin: 100px;
+            margin-top: 50px;
+            border-radius: 50px;  
+        } 
+        body{
+          background-image: url("img(1).jpeg");
+          background-repeat: no-repeat;
+           background-size: 100% 100%;
+ 
+        }
+  
+  </style>
+</head>
+<body>
+<center>
+	<h1>Registration form</h1>
+  <div class="container">
+       <form action="alert box-2.html">
+       	 <table>
+       	 	<tr>
+       	 		<td class="text">Full name:</td>
+       	 		<td ><input class="input" type="text" placeholder="Enter full name" name="fullname" pattern="[A-Za-z\s]{3,}" title="contian Only Alphabets"></td>
+       	 	</tr>
+
+       	 	<tr>
+       	 		<td class="text">Email:</td>
+       	 		<td><input class="input" type="email" name="email" placeholder="Enter email"></td>
+       	 	</tr>
+
+       	 	<tr>
+       	 		<td class="text">Father's Name:</td>
+       	 		<td ><input class="input" type="text" name="Father's name" placeholder="Enter Father's name" pattern="[A-Za-z\s]{3,}" title="Contian Only Alphabets"></td>
+       	 	</tr>
+
+       	 	<tr>
+       	 		<td class="text">Age:</td>
+       	 		<td ><input class="input" type="number" name="Age" placeholder="Enter your age"></td>
+       	 	</tr>
+
+       	 	<tr>
+       	 		<td class="text">Date of birth</td>
+       	 		<td ><input class="input" type="date" name="date of birth"></td>
+       	 	</tr>
+
+       	 	<tr>
+       	 		<td class="text"><label>Gender:</label></td>
+       	 		<td class="Gender">
+                 <input  type="radio" name="Gender" value="male">male
+                <input  type="radio" name="Gender" value="female">female
+                  <input  type="radio" name="Gender" value="other">other
+       	 		</td>
+       	 	</tr>
+
+       	 	<tr>
+       	 		<td class="text">location:</td>
+       	 		<td ><input class="input"></td>
+       	 	</tr>
+
+       	 	<tr>
+       	 		<td class="text">Any Query?</td>
+       	 		<td ><input class="input"></td>
+       	 	</tr>
+
+       	 	<tr>
+       	 		<td  colspan="2" align="center" width="20px">
+                    <button>Submit</button>
+       	 			     <input class="reset" type="reset" name="reset">
+       	 		</td>
+       	 	</tr>
+
+          <tr>
+            <td colspan="2" align="center">
+             Already have an account?
+             <a href="login page.html">login now</a>
+           </td>
+         </tr>
+
+       	 </table>
+       </form>
+    </div>
+</center>
+</body>
+</html>
